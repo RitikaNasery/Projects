@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f93d44ab-685d-4c57-978a-c000b9f24889">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from damage_stock]]>
+	</queryString>
+	<field name="Damage_Stock_No" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="GR_number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="GRN_Date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dated" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="product_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Distributor_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Distributor_Address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Distributor_Contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Reason" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_stock" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="damage_stock" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="remaining_stock" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="332" y="16" width="163" height="37" uuid="116470fa-fa84-4e13-a6e8-3637837b8892"/>
+				<textElement>
+					<font fontName="Calibri" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unique Medi +]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="701" y="1" width="100" height="20" uuid="f311a264-900b-4a43-ad20-64b82b8c8949"/>
+				<textElement>
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="321" y="3" width="186" height="23" uuid="74125318-935f-4e21-883c-29b376b69464"/>
+				<textElement>
+					<font fontName="Calibri" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Damage Stock Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<line>
+				<reportElement x="42" y="2" width="1" height="32" uuid="63a6d169-223b-46e0-b3b4-3efb820e18ec"/>
+			</line>
+			<line>
+				<reportElement x="2" y="1" width="802" height="4" uuid="0ccb9764-15ae-4a3e-86dd-8abf8d6778c5"/>
+			</line>
+			<staticText>
+				<reportElement x="106" y="6" width="43" height="20" uuid="ccf4a62e-5892-4667-b11e-885de63a634a"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GR No.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="154" y="2" width="1" height="32" uuid="0314508d-8b59-4112-aba5-c163e10aab71"/>
+			</line>
+			<line>
+				<reportElement x="102" y="2" width="1" height="32" uuid="1c4de991-adda-487d-8bd2-1d138e0e6f9d"/>
+			</line>
+			<staticText>
+				<reportElement x="157" y="6" width="55" height="20" uuid="7842cb60-c4f2-4ae1-9be6-a3025cf218c1"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GR. Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="217" y="2" width="1" height="32" uuid="c2b8955c-d9c9-43e3-aa81-ed322fb07065"/>
+			</line>
+			<staticText>
+				<reportElement x="220" y="6" width="93" height="20" uuid="4b1dd831-99bf-44e9-85a5-b408c2c1a86d"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product Name]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="34" width="801" height="4" uuid="2e4569e7-4742-4bbf-81f5-c4149bffc69f"/>
+			</line>
+			<line>
+				<reportElement x="341" y="2" width="1" height="32" uuid="b5f7fb0b-5933-4ca8-ade1-76698f846492"/>
+			</line>
+			<line>
+				<reportElement x="477" y="4" width="1" height="32" uuid="ea72e7a7-c96c-4b96-bfaa-71c0b384c030"/>
+			</line>
+			<staticText>
+				<reportElement x="2" y="4" width="43" height="20" uuid="45ba3e4e-956e-4519-855d-20794892e783"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sr. No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="4" width="33" height="20" uuid="9b9f12b8-4254-4805-b71d-41bc8914b3d1"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="7" width="102" height="20" uuid="8f52774e-cb2e-4709-a56a-29e73d3389db"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Distributor Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="8" width="120" height="20" uuid="ef488126-0324-4c17-aeed-93811811b085"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Distributor Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="612" y="9" width="102" height="20" uuid="96996b8e-c0b8-4383-a7ad-ea83beb19b2e"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Damaged Stock]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="720" y="9" width="47" height="20" uuid="8fcb46c8-6394-4861-959e-2d2f75e3534a"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reason]]></text>
+			</staticText>
+			<line>
+				<reportElement x="716" y="5" width="1" height="32" uuid="e8e02764-0eca-4a05-ac19-9fda3031ed8d"/>
+			</line>
+			<line>
+				<reportElement x="606" y="5" width="1" height="32" uuid="2e2044ba-6652-42bb-8ef1-6e47389ae30d"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="52" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="3" width="38" height="20" uuid="40dd0fbe-2d94-4c81-99eb-bab2074c40b1"/>
+				<textFieldExpression><![CDATA[$F{Damage_Stock_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="44" y="3" width="59" height="20" uuid="ae7fd412-4813-4f81-a475-789fd26aa185"/>
+				<textFieldExpression><![CDATA[$F{dated}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="105" y="2" width="44" height="20" uuid="25fc4e86-a993-4f3d-b30c-9e75d1a48635"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{GR_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="1" width="62" height="20" uuid="39441b88-8730-4cbb-8dee-24912c7a70f6"/>
+				<textFieldExpression><![CDATA[$F{GRN_Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="3" width="133" height="48" uuid="6b2183ee-3be1-45c1-bf61-d2307e566622"/>
+				<textFieldExpression><![CDATA[$F{Distributor_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="482" y="3" width="125" height="48" uuid="4c81e7d4-b6ed-49c0-bf1e-528716eed769"/>
+				<textFieldExpression><![CDATA[$F{Distributor_Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="612" y="3" width="100" height="20" uuid="003a65f6-d572-4f15-93fb-c7170a7dbf67"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{damage_stock}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="718" y="2" width="82" height="49" uuid="f1fd86ec-0d12-40da-80e7-ac2bd874aef2"/>
+				<textFieldExpression><![CDATA[$F{Reason}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="0" width="112" height="49" uuid="a840444c-dffb-4ceb-94be-17db374bee98"/>
+				<textFieldExpression><![CDATA[$F{product_name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<line>
+				<reportElement x="5" y="3" width="798" height="1" uuid="07c09261-c108-41d1-ac65-9cddea648544"/>
+			</line>
+			<textField evaluationTime="Report">
+				<reportElement x="761" y="6" width="40" height="20" uuid="5d1da0b2-bdd8-4f3c-8c46-c11b3dead96b"/>
+				<textElement>
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="681" y="6" width="80" height="20" uuid="3b867008-76ea-45fa-9feb-d4f3b8abd23e"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

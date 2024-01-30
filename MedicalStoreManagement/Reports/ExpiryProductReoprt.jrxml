@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="715c18dd-a36b-4f3b-9135-55bd75e643ca">
+	<property name="ireport.zoom" value="1.2722928551174548"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from expiry_info]]>
+	</queryString>
+	<field name="Expiry_product_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Product_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Quantity" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mgf_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Expiry_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Expiry_Status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="12" width="163" height="37" uuid="10652d49-4d95-4385-88ce-4c6895b14937"/>
+				<textElement>
+					<font fontName="Calibri" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unique Medi +]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="2" width="186" height="23" uuid="9adf0076-5fa2-42ed-9ba7-e745a330e145"/>
+				<textElement>
+					<font fontName="Calibri" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Expiry Stock Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="413" y="15" width="37" height="20" uuid="b3caefcd-fac2-42da-8686-5f542c54022a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="453" y="14" width="100" height="20" uuid="7c85edba-04b8-4bea-8ad8-fe6c79e92d18"/>
+				<textElement>
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="3" width="555" height="1" uuid="2aa9de0b-93cc-4072-841b-948f0fd77e9c"/>
+			</line>
+			<line>
+				<reportElement x="0" y="27" width="555" height="1" uuid="33190882-c22f-4f37-9f1c-4a6319389497"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="5" width="48" height="20" uuid="9f0fdb67-4289-4309-be32-78d998420f79"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sr. No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="5" width="126" height="20" uuid="a8a855e8-cfaa-46a0-861d-eab76998291b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Product Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="308" y="6" width="81" height="20" uuid="a24046b2-9388-4f77-9bfd-3a8e34d5b27e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Expired Stock]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="6" width="61" height="20" uuid="6a42953f-d3df-4e7f-a12d-f2221512cae7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Mfg Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="7" width="79" height="20" uuid="492d9dbb-dac4-47bd-92ad-160e9f678649"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Expired Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="55" y="3" width="1" height="24" uuid="29198f9a-078c-4493-a971-36f4160822c9"/>
+			</line>
+			<line>
+				<reportElement x="304" y="3" width="1" height="24" uuid="5d9c2245-9c93-4fbc-ae84-7a1d252d6a36"/>
+			</line>
+			<line>
+				<reportElement x="387" y="3" width="1" height="24" uuid="b2c24802-392d-452f-883e-53acc2107707"/>
+			</line>
+			<line>
+				<reportElement x="467" y="3" width="1" height="24" uuid="da661888-94fd-46bc-8880-08c0639ef09e"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="0" width="49" height="20" uuid="11131698-661c-44ad-82bb-a1f30fbeab72"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Expiry_product_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="2" width="244" height="20" uuid="5aa85b91-2d70-4509-8916-cded6a85053e"/>
+				<textFieldExpression><![CDATA[$F{Product_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="313" y="0" width="68" height="20" uuid="74bddafe-e19f-4b4e-9038-716e41a7badf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="392" y="2" width="70" height="20" uuid="25eb2aa3-5795-48c7-9c03-5a5427c0182c"/>
+				<textFieldExpression><![CDATA[$F{mgf_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="469" y="2" width="80" height="20" uuid="53378e12-8e64-401c-89b2-758f45597b67"/>
+				<textFieldExpression><![CDATA[$F{Expiry_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="27" splitType="Stretch">
+			<textField evaluationTime="Report">
+				<reportElement x="509" y="5" width="40" height="20" uuid="2de6c188-c3f3-42da-b5c5-600462eb49a0"/>
+				<textElement>
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="429" y="5" width="80" height="20" uuid="cbf01e05-a1cb-4a38-a9a2-75ac98bdbc6d"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="2" width="555" height="1" uuid="b0a4823d-1e34-4c3b-bf1b-6422376cb6b0"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

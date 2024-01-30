@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ceced814-d2e7-4985-a752-76a82fdf11a1">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="277"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from creditors where pending_amount > 0]]>
+	</queryString>
+	<field name="creditors_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="creditors_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="creditors_mob" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="so_number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dated" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pay_mode" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_amount" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="paid_amount" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pending_amount" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="317" y="17" width="157" height="37" uuid="74ef2491-d353-4190-8a98-00ee0d0fe39e"/>
+				<textElement>
+					<font fontName="Calibri" size="24"/>
+				</textElement>
+				<text><![CDATA[Unique Medi +]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="272" y="4" width="250" height="26" uuid="abde4515-47b2-4ae7-896d-720825fff706"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Creditors Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="672" y="12" width="58" height="20" uuid="381ef1a9-659f-4819-bb8f-fff046d2988e"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<text><![CDATA[Print Date:]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="720" y="12" width="82" height="20" uuid="0f1cf003-cc1b-4764-b894-49a1fd947065"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<line>
+				<reportElement x="2" y="2" width="802" height="1" uuid="13531199-c6a9-4b9f-b800-d38c2c2f3128"/>
+			</line>
+			<line>
+				<reportElement x="4" y="30" width="802" height="1" uuid="9d2b15fa-7275-403d-b961-d4539b013034"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="3" width="64" height="20" uuid="3c5d0cc9-5ff0-4005-831e-e887a3fc2f02"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Creditor Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="91" y="3" width="71" height="20" uuid="821872ee-12cb-4d6d-ac2c-d00c9988361d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bill Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="3" width="119" height="20" uuid="6d49daf9-324c-461a-a693-1454804843a4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Creditor Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="3" width="40" height="20" uuid="40c2327e-fd75-4e81-ad38-2179371ee56b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="3" width="101" height="20" uuid="908af89e-8832-40d8-b770-bbc439e02a71"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Mode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="3" width="101" height="20" uuid="e989092d-6d3d-4bf4-9f33-740ece50da5d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="588" y="3" width="101" height="20" uuid="335d5b83-facc-4e4c-81a9-dc5b39e26d32"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paid Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="689" y="3" width="101" height="20" uuid="e40ae7ed-b8cf-4db0-9901-2d8f3591aa23"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Balance Amount]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement x="170" y="2" width="1" height="26" uuid="d799a1a0-b851-418d-a5bd-71c697fcc3bd"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="78" y="2" width="1" height="26" uuid="b52d3c35-2a67-4fec-93d4-6802c63ccbae"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="299" y="2" width="1" height="26" uuid="b0bc0886-a79f-43c2-b5ce-c416732abac6"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="358" y="2" width="1" height="26" uuid="fe9af77a-9412-4dc0-938b-8a45997542ef"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="465" y="1" width="1" height="26" uuid="7996d529-4634-403c-b393-d0b73345dc8c"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="582" y="2" width="1" height="26" uuid="0bb86652-6d7a-426a-869b-b7424af21a58"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="681" y="2" width="1" height="26" uuid="ba961dce-cea2-44a9-91b4-bdc9394ed820"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="1" width="74" height="20" uuid="4f7a9384-c24e-4bcf-8150-f15169e7c338"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{creditors_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="1" width="100" height="15" uuid="dff7158c-cffb-4d0e-bec8-88e56467aba9"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{creditors_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="0" width="71" height="20" uuid="81887c56-a0a1-4f33-a43c-a692541ca71d"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{so_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="-1" width="50" height="17" uuid="ff23ef24-44c6-4596-82c7-0b81f2cbeb67"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dated}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="0" width="81" height="16" uuid="ef1e459c-1735-4297-8062-5ff4aa1a82d0"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pay_mode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="624" y="0" width="84" height="16" uuid="b628b29b-e985-467a-852b-cd6e9cbae732"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paid_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="730" y="0" width="100" height="16" uuid="2a402c68-4b3a-44f3-b12a-6e06d22257c8"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pending_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="2" width="100" height="20" uuid="538d3fce-a6ce-461f-8697-651a95308af5"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total_amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="21" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="46" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="16" width="802" height="1" uuid="93c6f8b2-d1d8-4008-a09b-2bc8dc68acba"/>
+			</line>
+			<textField>
+				<reportElement x="660" y="21" width="80" height="20" uuid="61fcac00-5993-4738-8fe3-2512573c106f"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="740" y="21" width="40" height="20" uuid="5a26603c-c94b-4b57-ac49-551850f59807"/>
+				<textElement>
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="23" splitType="Stretch"/>
+	</summary>
+</jasperReport>

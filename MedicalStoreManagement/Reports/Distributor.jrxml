@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c9231884-bb04-4046-ba72-d6326ee7e7e5">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM distributors_details]]>
+	</queryString>
+	<field name="distributors_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="distributors_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="distributors_address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="distributors_officeno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="distributors_mobileno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="distributors_email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="distributors_status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="23" width="146" height="37" uuid="efca332e-6791-4b4c-a42e-85a91d91dfdd"/>
+				<textElement>
+					<font fontName="Calibri" size="24"/>
+				</textElement>
+				<text><![CDATA[Unique Medi +]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="159" y="6" width="250" height="26" uuid="fcd41901-626d-4c7f-86af-c72f5a9617f0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Distributor Information]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<line direction="BottomUp">
+				<reportElement x="172" y="8" width="1" height="26" uuid="da00007f-85b5-4a77-9e3a-70e8d2e2eed3"/>
+			</line>
+			<staticText>
+				<reportElement x="333" y="13" width="49" height="18" uuid="d3cc0d31-6496-400b-9737-598d07b17dcb"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email-Id]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement x="490" y="10" width="1" height="26" uuid="9670b5c1-8d1e-4bba-a684-3a1908ec7a9c"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="303" y="8" width="1" height="26" uuid="39d35404-7f98-4408-ade7-daab0da75d97"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="13" width="35" height="20" uuid="eeb6ab2a-b0ae-4bc5-97d0-cb734915ffb1"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="421" y="14" width="63" height="20" uuid="3d343f14-9f45-4567-96cb-aab04057e64b"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mobile No.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="7" width="552" height="3" uuid="dcfe264d-5106-47b6-9a8c-6890eecebf9e"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="414" y="8" width="1" height="26" uuid="c06d6996-88d6-438e-9de8-17a26648a251"/>
+			</line>
+			<line>
+				<reportElement x="4" y="33" width="552" height="3" uuid="aeac5a37-c9af-48a7-bde0-23577fe424b8"/>
+			</line>
+			<staticText>
+				<reportElement x="177" y="11" width="46" height="20" uuid="45bf16d2-9d26-46e4-9462-3417e573e058"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="11" width="100" height="20" uuid="c8ebbecc-7767-4b56-b0f4-c73b8844d34e"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="498" y="13" width="53" height="20" uuid="3fb404c5-3a52-40fa-b632-23f70321a5e7"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Office No.]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement x="40" y="8" width="1" height="26" uuid="c99b0cbd-870d-46ed-b21d-8e2349872804"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="4" y="1" width="35" height="20" uuid="71491207-29b1-4475-ad50-d5d0131b7472"/>
+				<textFieldExpression><![CDATA[$F{distributors_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="43" y="1" width="116" height="20" uuid="bde2cbb7-4d66-481d-9931-25d5f6ea0f7d"/>
+				<textFieldExpression><![CDATA[$F{distributors_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="2" width="126" height="39" uuid="750dd057-21ae-4ffa-90c0-7a9f8c0a0a77"/>
+				<textFieldExpression><![CDATA[$F{distributors_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="2" width="100" height="39" uuid="dd57db32-c03c-4a66-80a2-9068b7e2fe7b"/>
+				<textFieldExpression><![CDATA[$F{distributors_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="418" y="2" width="70" height="19" uuid="39e8f625-2d6a-4fa3-87b9-b23acec18e48"/>
+				<textFieldExpression><![CDATA[$F{distributors_mobileno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="493" y="2" width="62" height="20" uuid="9c3e0142-b1da-40a7-b4cf-7e9c1ec390d7"/>
+				<textFieldExpression><![CDATA[$F{distributors_officeno}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

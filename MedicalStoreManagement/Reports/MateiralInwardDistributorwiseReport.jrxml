@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="55ac9804-c5bd-4dc2-b117-22981a759124">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="888"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from material_inward_info where distributors_name=$P{parameter}]]>
+	</queryString>
+	<field name="GR_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="GR_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PO_number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PO_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Batch_number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="distributors_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="product_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Brand" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Available_stock" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Stock_to_Update" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Total_Stock" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="VAT_purchase" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="purchase_unit_price" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_purchase_price" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Mfg_Date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Expiry_Date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Material_Status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Material_Description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="351" y="13" width="163" height="37" uuid="9915c25c-cc94-403f-8cbf-233b499d9d61"/>
+				<textElement>
+					<font fontName="Calibri" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unique Medi +]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="264" y="0" width="353" height="23" uuid="9340339a-cc24-4fdf-9bab-ac5aa7032503"/>
+				<textElement>
+					<font fontName="Calibri" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Distributor Wise Material Inward]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="597" y="15" width="52" height="20" uuid="dc0729c4-fa78-4858-afd7-ed45cec600ac"/>
+				<text><![CDATA[Print Date]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="670" y="15" width="100" height="20" uuid="cb0eabf8-8ee4-41ef-bc95-a501cfe7a906"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="63" splitType="Stretch">
+			<line>
+				<reportElement x="3" y="5" width="802" height="4" uuid="5dc1797f-86e6-45ae-9123-61688962269b"/>
+			</line>
+			<line>
+				<reportElement x="2" y="35" width="801" height="4" uuid="b07a48df-11f3-4748-b141-a8a34660c250"/>
+			</line>
+			<staticText>
+				<reportElement x="12" y="8" width="126" height="20" uuid="fb87d0de-df34-4361-a16f-e9e3b3e63231"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Distributor Name:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="10" width="223" height="20" uuid="1d78a757-a051-4e0a-95a8-b6a06cf4735d"/>
+				<textFieldExpression><![CDATA[$F{distributors_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="178" y="39" width="55" height="20" uuid="9598a4b5-6736-4298-addd-370eed122b3e"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GR. Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="39" width="93" height="20" uuid="38db56ec-69b7-453e-8858-0f0d57d4a3a5"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="516" y="39" width="83" height="20" uuid="ff403080-66bc-4b1f-adc4-4e1648a17013"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stock Inward]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="37" width="36" height="20" uuid="77731545-f3b9-42e8-8697-9dd1a70c66d0"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VAT%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="722" y="40" width="65" height="20" uuid="a4b1a81d-cdc4-46c1-b1e3-f7f1a22cd455"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Exp. Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="620" y="39" width="61" height="20" uuid="0d3598a3-c43e-402f-9e7d-3cd6fb2ac85c"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mfg. Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="37" width="61" height="20" uuid="28044174-e782-4385-89dc-d2860899cab8"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unit Price]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="58" width="802" height="4" uuid="0d50fa69-6d41-4909-8253-9ad1db4d93c4"/>
+			</line>
+			<line>
+				<reportElement x="370" y="37" width="1" height="22" uuid="a01c3215-285e-4fc7-b2d2-2305536fd1d6"/>
+			</line>
+			<line>
+				<reportElement x="53" y="35" width="1" height="22" uuid="ac8398db-549b-47c7-b05c-d329c77948ae"/>
+			</line>
+			<line>
+				<reportElement x="163" y="36" width="1" height="22" uuid="ff3d8def-3203-4bdc-9c43-913381d65d64"/>
+			</line>
+			<line>
+				<reportElement x="238" y="36" width="1" height="22" uuid="387e8b3b-9a83-4da6-bec2-dfde4f7e0f6c"/>
+			</line>
+			<line>
+				<reportElement x="443" y="36" width="1" height="22" uuid="18622c1f-0ecc-49d8-97eb-4648f83de3b9"/>
+			</line>
+			<line>
+				<reportElement x="513" y="38" width="1" height="22" uuid="1bb4cebc-23b4-4079-9e52-36db9100ad6e"/>
+			</line>
+			<line>
+				<reportElement x="616" y="38" width="1" height="22" uuid="3e15fac1-0aa7-469f-ae90-0ffed16d1992"/>
+			</line>
+			<line>
+				<reportElement x="704" y="40" width="1" height="22" uuid="b6311e63-e64d-431b-8638-3f62329dfa14"/>
+			</line>
+			<staticText>
+				<reportElement x="57" y="37" width="60" height="20" uuid="2d72b739-d049-41f3-8d5f-47a3a09d73d5"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.O. Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="38" width="49" height="20" uuid="dd396569-f4b2-46cd-9326-c1e23b895cab"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.O. No.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="117" y="36" width="1" height="22" uuid="7bc5ce0c-0c82-4e16-aa62-efb4032cd70e"/>
+			</line>
+			<staticText>
+				<reportElement x="121" y="38" width="47" height="20" uuid="28582d2e-aba9-478a-9a27-e8dcb4143985"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GR No.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="4" width="48" height="20" uuid="031d4dd1-dfad-4615-a13b-a252048b6c78"/>
+				<textFieldExpression><![CDATA[$F{PO_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="57" y="5" width="56" height="20" uuid="33ecf554-43e4-4fc4-98bd-55786b1aefcd"/>
+				<textFieldExpression><![CDATA[$F{PO_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="9" width="39" height="20" uuid="af2078b9-1f52-4c1a-8cc4-950e26278682"/>
+				<textFieldExpression><![CDATA[$F{GR_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="9" width="64" height="20" uuid="76955839-0ffa-4d41-a438-9e9f7edf6912"/>
+				<textFieldExpression><![CDATA[$F{GR_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="10" width="100" height="20" uuid="152abee3-1633-4c77-a4c5-27c0a267bc8a"/>
+				<textFieldExpression><![CDATA[$F{product_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="12" width="69" height="20" uuid="80afaeed-a9af-443a-a156-046a0aad7b34"/>
+				<textFieldExpression><![CDATA[$F{purchase_unit_price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="12" width="70" height="20" uuid="cb7d779c-4dcb-482b-a2e8-857bbbee00ab"/>
+				<textFieldExpression><![CDATA[$F{VAT_purchase}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="517" y="13" width="99" height="20" uuid="709fcb6e-1dd3-4c7d-bc47-5aa92e32af9b"/>
+				<textFieldExpression><![CDATA[$F{Stock_to_Update}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="620" y="12" width="100" height="20" uuid="2eee3aa0-761e-4d1a-a674-caaf70ec3986"/>
+				<textFieldExpression><![CDATA[$F{Mfg_Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="709" y="12" width="100" height="20" uuid="18035d6e-c4cd-455f-a709-66fcb8711eb7"/>
+				<textFieldExpression><![CDATA[$F{Expiry_Date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

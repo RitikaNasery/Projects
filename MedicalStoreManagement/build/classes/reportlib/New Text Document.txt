@@ -1,0 +1,5 @@
+    HashMap para=new HashMap();
+
+        para.put("NAME", "PANKAJ");
+        ReportView r = new ReportView("C:\\CollegeAdmission\\STUDENT2.jasper", para);
+        r.setVisible(true);

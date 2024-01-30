@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="951e59a8-3923-4fd6-bb20-128bda11e0d7">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="253"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from customer_info]]>
+	</queryString>
+	<field name="customer_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="customer_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="customer_address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="customer_gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="customer_age" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="customer_contactnumber" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="customer_docname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="customerstatus" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="204" y="18" width="271" height="37" uuid="69487f4b-aa03-4925-955f-9611e0b558ad"/>
+				<textElement>
+					<font fontName="Calibri" size="24"/>
+				</textElement>
+				<text><![CDATA[Unique Medi +]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="153" y="6" width="250" height="26" uuid="baa68bcd-1fd3-4549-bc17-9e9f2504e11b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Customer Information]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="46" y="9" width="100" height="20" uuid="d47d1879-8814-4aa9-addc-38c8893a173b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="11" width="35" height="20" uuid="31abdc46-969a-4afa-ae65-a57a8ac70f68"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID	]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="5" width="552" height="3" uuid="e36538be-0d1f-4643-a76e-597193c3db9b"/>
+			</line>
+			<staticText>
+				<reportElement x="466" y="11" width="79" height="20" uuid="e706c895-0f01-4951-82c8-d2184266a7ea"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ref. Doc Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="178" y="9" width="46" height="20" uuid="8de73a95-dd92-4737-9a6f-6a65d7b9fb3b"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="11" width="64" height="20" uuid="b27bcbc3-4b0a-415f-81aa-24f0a68fc23b"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact No.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="5" y="31" width="552" height="3" uuid="cd79b6eb-6c78-48b5-913b-a6f58bb8f723"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="41" y="6" width="1" height="26" uuid="91483e5c-b7d5-4121-a5f9-a125dcf68403"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="173" y="6" width="1" height="26" uuid="44601d31-cf02-4df2-b7ff-929a312ada2e"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="456" y="7" width="1" height="26" uuid="1e6ed450-4a4c-448d-9200-946faa2e7ead"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="382" y="7" width="1" height="26" uuid="b1878bdf-f80e-42a9-8ef8-25313693d35f"/>
+			</line>
+			<staticText>
+				<reportElement x="294" y="10" width="42" height="20" uuid="8f97f969-5df5-4aad-8fc9-4ffe55343dd2"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="10" width="29" height="20" uuid="760a8ea6-0a26-43b9-a6c7-9ab70c0edd80"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement x="342" y="6" width="1" height="26" uuid="565a7989-f6d2-4380-b618-4e0d99c38266"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="291" y="6" width="1" height="26" uuid="c2a5fc52-f784-4514-bd18-908716048773"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="466" y="0" width="91" height="20" uuid="8f3a66be-08b9-4f85-a1e3-d4d8e16147fc"/>
+				<textFieldExpression><![CDATA[$F{customer_docname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="389" y="0" width="64" height="20" uuid="ac97d4a3-d241-4884-98c7-2c3e5f01bb6d"/>
+				<textFieldExpression><![CDATA[$F{customer_contactnumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="0" width="29" height="20" uuid="6932ba0c-5dd0-4730-b062-56479d2620c4"/>
+				<textFieldExpression><![CDATA[$F{customer_age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="0" width="42" height="20" uuid="fb24752b-ade0-4199-a80c-90beba0edb60"/>
+				<textFieldExpression><![CDATA[$F{customer_gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="0" width="102" height="20" uuid="28efe3e0-48ef-4fb7-8731-b0c3753d2003"/>
+				<textFieldExpression><![CDATA[$F{customer_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="1" width="121" height="20" uuid="d61f83dd-857e-4771-8546-3d77f8362d96"/>
+				<textFieldExpression><![CDATA[$F{customer_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4" y="2" width="33" height="20" uuid="6b2203fe-acda-4779-a0ce-88c36274211b"/>
+				<textFieldExpression><![CDATA[$F{customer_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
